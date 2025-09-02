@@ -1,0 +1,336 @@
+[
+  {
+    "state": "Abia",
+    "solar_potential": 4.8,
+    "wind_potential": 3.5,
+    "biomass_potential": 1500,
+    "hydro_potential": 10,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Abuja (FCT)",
+    "solar_potential": 5.0,
+    "wind_potential": 3.7,
+    "biomass_potential": 1700,
+    "hydro_potential": 14,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Adamawa",
+    "solar_potential": 5.5,
+    "wind_potential": 4.5,
+    "biomass_potential": 2200,
+    "hydro_potential": 20,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Akwa Ibom",
+    "solar_potential": 4.6,
+    "wind_potential": 3.2,
+    "biomass_potential": 1400,
+    "hydro_potential": 12,
+    "year": 2023,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Anambra",
+    "solar_potential": 4.7,
+    "wind_potential": 3.3,
+    "biomass_potential": 1600,
+    "hydro_potential": 11,
+    "year": 2023,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Bauchi",
+    "solar_potential": 6.0,
+    "wind_potential": 4.8,
+    "biomass_potential": 3000,
+    "hydro_potential": 25,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Bayelsa",
+    "solar_potential": 4.2,
+    "wind_potential": 2.8,
+    "biomass_potential": 1300,
+    "hydro_potential": 8,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Benue",
+    "solar_potential": 5.3,
+    "wind_potential": 3.8,
+    "biomass_potential": 2100,
+    "hydro_potential": 18,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Borno",
+    "solar_potential": 6.3,
+    "wind_potential": 5.0,
+    "biomass_potential": 4000,
+    "hydro_potential": 30,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Cross River",
+    "solar_potential": 4.5,
+    "wind_potential": 3.0,
+    "biomass_potential": 1600,
+    "hydro_potential": 15,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Delta",
+    "solar_potential": 4.6,
+    "wind_potential": 3.2,
+    "biomass_potential": 1500,
+    "hydro_potential": 10,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Ebonyi",
+    "solar_potential": 4.8,
+    "wind_potential": 3.5,
+    "biomass_potential": 1700,
+    "hydro_potential": 12,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Edo",
+    "solar_potential": 4.9,
+    "wind_potential": 3.6,
+    "biomass_potential": 1800,
+    "hydro_potential": 13,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Ekiti",
+    "solar_potential": 4.7,
+    "wind_potential": 3.4,
+    "biomass_potential": 1500,
+    "hydro_potential": 11,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Enugu",
+    "solar_potential": 4.8,
+    "wind_potential": 3.5,
+    "biomass_potential": 1600,
+    "hydro_potential": 12,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  
+  {
+    "state": "Gombe",
+    "solar_potential": 5.8,
+    "wind_potential": 4.5,
+    "biomass_potential": 2500,
+    "hydro_potential": 20,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Imo",
+    "solar_potential": 4.7,
+    "wind_potential": 3.3,
+    "biomass_potential": 1500,
+    "hydro_potential": 11,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Jigawa",
+    "solar_potential": 6.1,
+    "wind_potential": 4.7,
+    "biomass_potential": 3500,
+    "hydro_potential": 22,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Kaduna",
+    "solar_potential": 5.4,
+    "wind_potential": 4.0,
+    "biomass_potential": 2300,
+    "hydro_potential": 20,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Kano",
+    "solar_potential": 6.0,
+    "wind_potential": 4.8,
+    "biomass_potential": 2800,
+    "hydro_potential": 25,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Katsina",
+    "solar_potential": 6.1,
+    "wind_potential": 4.9,
+    "biomass_potential": 3000,
+    "hydro_potential": 27,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Kebbi",
+    "solar_potential": 5.9,
+    "wind_potential": 4.5,
+    "biomass_potential": 2700,
+    "hydro_potential": 24,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Kogi",
+    "solar_potential": 5.0,
+    "wind_potential": 3.8,
+    "biomass_potential": 2000,
+    "hydro_potential": 15,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Kwara",
+    "solar_potential": 5.2,
+    "wind_potential": 3.9,
+    "biomass_potential": 1900,
+    "hydro_potential": 14,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Lagos",
+    "solar_potential": 4.5,
+    "wind_potential": 3.2,
+    "biomass_potential": 1700,
+    "hydro_potential": 8,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Nasarawa",
+    "solar_potential": 5.1,
+    "wind_potential": 3.7,
+    "biomass_potential": 2100,
+    "hydro_potential": 16,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Niger",
+    "solar_potential": 5.3,
+    "wind_potential": 3.8,
+    "biomass_potential": 2300,
+    "hydro_potential": 18,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Ogun",
+    "solar_potential": 4.6,
+    "wind_potential": 3.3,
+    "biomass_potential": 1500,
+    "hydro_potential": 10,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Ondo",
+    "solar_potential": 4.7,
+    "wind_potential": 3.4,
+    "biomass_potential": 1600,
+    "hydro_potential": 11,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Osun",
+    "solar_potential": 4.8,
+    "wind_potential": 3.5,
+    "biomass_potential": 1650,
+    "hydro_potential": 12,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Oyo",
+    "solar_potential": 4.9,
+    "wind_potential": 3.6,
+    "biomass_potential": 1700,
+    "hydro_potential": 12,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Plateau",
+    "solar_potential": 5.6,
+    "wind_potential": 4.2,
+    "biomass_potential": 2500,
+    "hydro_potential": 20,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Rivers",
+    "solar_potential": 4.4,
+    "wind_potential": 3.1,
+    "biomass_potential": 1400,
+    "hydro_potential": 9,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Sokoto",
+    "solar_potential": 6.3,
+    "wind_potential": 5.0,
+    "biomass_potential": 4000,
+    "hydro_potential": 32,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Taraba",
+    "solar_potential": 5.7,
+    "wind_potential": 4.3,
+    "biomass_potential": 2700,
+    "hydro_potential": 22,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Yobe",
+    "solar_potential": 6.0,
+    "wind_potential": 4.8,
+    "biomass_potential": 3500,
+    "hydro_potential": 28,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  },
+  {
+    "state": "Zamfara",
+    "solar_potential": 6.1,
+    "wind_potential": 4.9,
+    "biomass_potential": 3700,
+    "hydro_potential": 30,
+    "year": 2025,
+    "data_source": "Dummy Data"
+  }
+]

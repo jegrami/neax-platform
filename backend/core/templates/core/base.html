@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center;}
+        nav { background-color: #004d40; color: white; padding: 1rem; }
+        nav a { color: white; text-decoration: none; margin-right: 1rem; }
+        .container { padding: 2rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="#">Dashboard</a>
+        <a href="#">API</a>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

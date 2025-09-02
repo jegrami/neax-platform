@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import 'leaflet/dist/leaflet.css';
+
+p.a{
+  text-decoration: underline;
+}
+
+p.a:hover {
+  color: gray;
+}
+
+@font-face {
+    font-family: 'Almendra';
+    src: url('/src/fonts/Almendra-Regular.woff2') format('woff2'),
+         url('/src/fonts/Almendra-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.hero-setion {
+  width: 100%;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/src/fonts/Inter-Regular.woff2') format('woff2'),
+         url('/src/fonts/Inter-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mindshine';
+    src: url('/src/fonts/Mindshine-Regular.woff2') format('woff2'),
+         url('/src/fonts/Mindshine-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('/src/fonts/Inconsolata-Regular.woff') format('woff2'),
+         url('/src/fonts/Inconsolata-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/src/fonts/RobotoMono-Regular.woff2') format('woff2'),
+         url('/src/fonts/RobotoMono-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@theme {
+    --color-primary:  oklch(93% 0.033 255.585);
+     --color-secondary: oklch(37.9% 0.146 265.522);
+    --color-accent: oklch();
+    
+    --font-almendra: 'Almendra', sans-serif;
+    --font-inter: 'Inter', ui-sans-serif;
+    --font-mindshine: 'Mindshine', sans-serif;
+    --font-inconsolata: 'Inconsolata', serif;
+    --font-roboto: 'Roboto Mono', 'sans-serif';
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: o.4;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+#cards {
+  animation: appear linear 2s ease-in-out;
+}

@@ -1,0 +1,22 @@
+[project]
+name = "nigeria-energy-access-explorer"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "jeremiah igrami", email = "jegrami.dev@gmail.com"},
+]
+dependencies = ["django>=5.2.3", "djangorestframework>=3.16.0", "django-cors-headers>=4.7.0", "psycopg2-binary>=2.9.10", "httpie>=3.2.4"]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+runserver = "python manage.py runserver"
+makemigrations = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+createsuperuser = "python manage.py createsuperuser"
+
