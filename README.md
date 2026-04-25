@@ -6,7 +6,7 @@ NEAX is an open, Nigeria-focused geospatial planning project for identifying and
 
 Right now, the project is in active MVP development. The current focus is building a reliable data pipeline and scoring workflow first, then layering in richer datasets and map-based exploration.
 
-I started this project to sharpen my engineering skills across data pipelines, geospatial workflows, and full-stack product development, while building something practical and useful in the real world. The code is being developed step by step, with emphasis on clarity, modularity, and maintainability.
+I started this project to sharpen my engineering skills across data pipelines, geospatial workflows, and full-stack product development, while building something practical and useful in the real world. 
 
 ## Project Areas
 
