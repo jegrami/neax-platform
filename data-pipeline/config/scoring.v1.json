@@ -1,0 +1,7 @@
+{
+  "version": "2026.04.1",
+  "demand_weights": {
+    "population_density": 0.7,
+    "health_facilities": 0.3
+  }
+}

@@ -1,0 +1,80 @@
+# -------------------------
+# OS / Editor
+# -------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+
+# VS Code: keep shared settings if needed, ignore rest
+.vscode/*
+!.vscode/settings.json
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+
+# virtual envs
+.venv/
+venv/
+env/
+
+# tooling caches
+.pytest_cache/
+.pytest_cache_local/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# uv cache (local workaround)
+.uv-cache/
+
+# -------------------------
+# Node / Frontend
+# -------------------------
+node_modules/
+apps/web/node_modules/
+apps/web/.vite/
+*.tsbuildinfo
+
+# Build outputs
+dist/
+build/
+apps/web/dist/
+apps/web/build/
+
+# -------------------------
+# Data artifacts / generated outputs
+# -------------------------
+# Keep folder structure, ignore generated files
+data-artifacts/latest/*
+!data-artifacts/latest/.gitkeep
+
+# In case nested artifact dir exists inside data-pipeline
+data-pipeline/data-artifacts/latest/*
+!data-pipeline/data-artifacts/latest/.gitkeep
+
+# Generated pipeline intermediates
+data-pipeline/data/lga_input_prepared.csv
+data-pipeline/data/lga_input_report.json
+
+# Temp files
+data-pipeline/data/tmp_*.csv
+data-pipeline/data/tmp_*.json
+data-pipeline/config/tmp_*.json
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

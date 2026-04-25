@@ -1,0 +1,6 @@
+lga_id,lga_name,population_density,health_facilities
+NG001,LGA A,250,12
+NG002,LGA B,180,7
+NG003,LGA C,320,15
+NG004,LGA D,140,4
+NG005,LGA E,290,14
