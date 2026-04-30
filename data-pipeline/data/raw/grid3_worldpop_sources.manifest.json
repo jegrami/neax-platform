@@ -1,0 +1,24 @@
+{
+  "dataset_name": "GRID3 + WorldPop LGA pilot extract",
+  "proxy_notice": "Population density and health facility counts are planning proxies, not direct measures of electricity access or unmet energy demand.",
+  "sources": [
+    {
+      "name": "GRID3 NGA Operational LGA Boundaries",
+      "url": "https://www.arcgis.com/home/item.html?id=2bb616a49ee84f409427cc2143787113",
+      "license": "CC BY 4.0",
+      "content_date": "2020-12-01"
+    },
+    {
+      "name": "WorldPop Nigeria Population Density",
+      "url": "https://hub.worldpop.org/geodata/summary?id=42943",
+      "license": "CC BY 4.0",
+      "content_date": "2020-06-22"
+    },
+    {
+      "name": "GRID3 NGA Health Facilities v2.0",
+      "url": "https://services3.arcgis.com/BU6Aadhn6tbBEdyk/ArcGIS/rest/services/GRID3_NGA_health_facilities_v2_0/FeatureServer/0",
+      "license": "CC BY 4.0",
+      "content_date": "2024-11-13"
+    }
+  ]
+}

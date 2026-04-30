@@ -22,17 +22,19 @@ Project root: `neax/`
 - Frontend in `apps/web` (lightweight)
 
 ## Current Pipeline Scripts
-- `data-pipeline/src/prepare_lga_input.py`
-  - Alias-based auto column mapping
-  - Required semantic columns validation
-  - Writes prepared CSV + ingestion report JSON
-- `data-pipeline/src/build_first_artifact.py`
-  - Reads prepared CSV
+- `data-pipeline/src/ingest_public_lga_source.py`
+  - Reads real public geospatial sources or URLs
+  - Extracts LGA-level indicators into one CSV
+- `data-pipeline/src/normalize_public_lga_indicator_csv.py`
+  - Validates and normalizes that extracted CSV into NEAX canonical schema
+  - Requires a multi-source manifest JSON for upstream provenance
+- `data-pipeline/src/score_lga_input.py`
+  - Reads normalized CSV
   - Loads scoring config JSON
   - Computes `demand_score`
-  - Writes parquet artifact with version
-- `data-pipeline/src/run_pipeline.py`
-  - Orchestrates prepare -> build
+  - Writes parquet artifact with version + UTC run timestamp
+- `data-pipeline/src/run_lga_scoring_pipeline.py`
+  - Orchestrates normalize -> score
 
 ## Config/Data Files
 - `data-pipeline/config/scoring.v1.json`
@@ -56,13 +58,13 @@ Project root: `neax/`
 ## Typical Commands
 From `data-pipeline/`:
 - Run tests: `uv run pytest -q`
-- Prepare input: `uv run src/prepare_lga_input.py --input lga_input_real.csv --output lga_input_prepared.csv`
-- Build artifact: `uv run src/build_first_artifact.py --config scoring.v1.json --input lga_input_prepared.csv`
-- One-shot pipeline: `uv run src/run_pipeline.py --raw-input lga_input_real.csv --config scoring.v1.json`
+- Normalize extracted CSV: `uv run src/normalize_public_lga_indicator_csv.py --input lga_input_real.csv --output lga_input_prepared.csv --sources-manifest raw/grid3_worldpop_sources.manifest.json`
+- Build artifact: `uv run src/score_lga_input.py --config scoring.v1.json --input lga_input_prepared.csv`
+- One-shot pipeline: `uv run src/run_lga_scoring_pipeline.py --input lga_input_real.csv --sources-manifest raw/grid3_worldpop_sources.manifest.json --config scoring.v1.json`
 
 ## Next Recommended Development Step
 Integrate first real public dataset ingestion (not synthetic CSV):
-1. Add source-specific prep script
-2. Map to canonical schema
-3. Run through existing prepare/build flow
+1. Run raw-source ingestion from boundaries + raster + facilities
+2. Normalize extracted CSV into canonical schema
+3. Run through scoring flow
 4. Validate output and ranking behavior

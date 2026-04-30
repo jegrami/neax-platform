@@ -1,3 +1,5 @@
+"""Run the current normalize -> score pipeline for real LGA indicator inputs."""
+
 from pathlib import Path
 import argparse
 import subprocess
@@ -6,8 +8,9 @@ import sys
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--raw-input", default="lga_input_real.csv")
-    parser.add_argument("--prepared-output", default="lga_input_prepared.csv")
+    parser.add_argument("--input", default="lga_input_real.csv")
+    parser.add_argument("--normalized-output", default="lga_input_prepared.csv")
+    parser.add_argument("--sources-manifest", required=True)
     parser.add_argument("--config", default="scoring.v1.json")
     return parser.parse_args()
 
@@ -25,30 +28,34 @@ def main() -> None:
 
     python = sys.executable
 
+    normalize_cmd = [
+        python,
+        "src/normalize_public_lga_indicator_csv.py",
+        "--input",
+        args.input,
+        "--output",
+        args.normalized_output,
+        "--sources-manifest",
+        args.sources_manifest,
+    ]
+
     run_step(
-        [
-            python,
-            "src/prepare_lga_input.py",
-            "--input",
-            args.raw_input,
-            "--output",
-            args.prepared_output,
-        ],
+        normalize_cmd,
         cwd=project_root,
-        label="Prepare input",
+        label="Normalize public LGA indicator CSV",
     )
 
     run_step(
         [
             python,
-            "src/build_first_artifact.py",
+            "src/score_lga_input.py",
             "--config",
             args.config,
             "--input",
-            args.prepared_output,
+            args.normalized_output,
         ],
         cwd=project_root,
-        label="Build artifact",
+        label="Score LGA input",
     )
 
     print("\nPipeline completed successfully.")

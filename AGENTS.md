@@ -80,10 +80,22 @@ A task is done only when:
 
 ## Engineering Rigor
 - Do not accept user suggestions blindly; evaluate each suggestion against project goals, EAE-informed architecture, and software best practices.
-- Push back clearly when a suggestion is unsafe, brittle, or poor practice, and propose a better alternative.
+- Push back clearly and early when a suggestion is unsafe, brittle, scope-expanding, overly complex, or poor practice, and propose a better alternative.
+- Default to the simplest design that can work for the current MVP; do not add complexity, infrastructure, abstractions, or process unless they clearly solve a present problem.
+- Prefer small, composable scripts and transparent data flows over monolithic or clever designs. Optimize for inspectability, debuggability, and incremental progress.
 - Prioritize performance, security, robustness, and maintainability in all decisions.
+- Before writing code, verify each construct is necessary; write economically so every line/character has clear purpose and avoid non-essential imports, abstractions, or boilerplate.
 - Teach like a senior engineer mentoring a junior: explain critical tradeoffs, architecture choices, and complex logic before implementation.
 - For major changes, state assumptions, risks, and expected impact before proceeding.
+
+## Implementation Style
+- Favor a Unix-style engineering approach: simple programs, clean interfaces, visible data flow, and composition over monolithic design.
+- Keep policy separate from mechanism. For example: source manifests should hold dataset facts and provenance, while scripts should implement reusable mechanics.
+- Prefer clarity over cleverness. Code should be easy to inspect, debug, and explain months later.
+- Fold knowledge into data where practical. Use config files, manifests, and explicit artifacts instead of hardcoding assumptions into logic.
+- Fail early and noisily when invariants are broken, but keep normal successful runs quiet and unsurprising.
+- Build inspectable intermediates when they materially help debugging or reuse, but avoid multiplying files or steps without a clear payoff.
+- Prototype before polishing. Get the pipeline working end-to-end in the smallest credible form before expanding scope, optimizing, or generalizing.
 
 ## Reference Documents
 - `docs/references/energy-access-explorer-data-and-methods.pdf`

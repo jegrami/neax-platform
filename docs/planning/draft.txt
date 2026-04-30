@@ -1,0 +1,12 @@
+source name: GRID3 NGA - Operational LGA Boundaries
+source url: https://data.grid3.org/datasets/GRID3::grid3-nga-operational-lga-boundaries/about
+license: CC BY 4.0 License
+content_date: 2025-09-04
+
+source name: The GRID3 NGA - Health Facilities v2.0
+url: 
+
+source name: The Spacial distribution of population density in 2020, Nigeria
+source url: https://hub.worldpop.org/geodata/summary?id=42943
+license: Creative Commons Attribution 4.0
+content_date: 2020-06-22

@@ -1,5 +1,5 @@
 import pandas as pd
-from build_first_artifact import minmax_0_100
+from score_lga_input import minmax_0_100
 
 
 def test_demand_score_is_bounded_0_100():

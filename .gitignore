@@ -58,13 +58,24 @@ apps/web/build/
 data-artifacts/latest/*
 !data-artifacts/latest/.gitkeep
 
-# In case nested artifact dir exists inside data-pipeline
-data-pipeline/data-artifacts/latest/*
-!data-pipeline/data-artifacts/latest/.gitkeep
+# -------------------
+# docs 
+# ---------------
+docs/references/eae-method-summary.md 
+docs/references/energy-access-explorer-data-and-methods.pdf
+docs/HANDOVER.md
 
 # Generated pipeline intermediates
 data-pipeline/data/lga_input_prepared.csv
 data-pipeline/data/lga_input_report.json
+data-pipeline/data/lga_input_real.csv
+data-pipeline/data/lga_input_real.metadata.json
+data-pipeline/data/lga_input_real_ingest_report.json
+data-pipeline/data/raw/_cache/
+data-pipeline/data/raw/*.gpkg
+data-pipeline/data/raw/*.tif
+data-pipeline/data/raw/*.tiff
+data-pipeline/data/raw/grid3_worldpop_lga_extract.csv
 
 # Temp files
 data-pipeline/data/tmp_*.csv

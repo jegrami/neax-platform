@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-import run_pipeline as rp
+import run_lga_scoring_pipeline as rp
 
 
 def test_run_step_raises_on_nonzero(monkeypatch):
@@ -23,8 +23,9 @@ def test_main_invokes_prepare_then_build(monkeypatch):
         rp,
         "parse_args",
         lambda: argparse.Namespace(
-            raw_input="input.csv",
-            prepared_output="prepared.csv",
+            input="input.csv",
+            normalized_output="prepared.csv",
+            sources_manifest="sources.json",
             config="scoring.v1.json",
         ),
     )
@@ -37,12 +38,13 @@ def test_main_invokes_prepare_then_build(monkeypatch):
     rp.main()
 
     assert len(captured) == 2
-    assert captured[0][2] == "Prepare input"
-    assert captured[1][2] == "Build artifact"
+    assert captured[0][2] == "Normalize public LGA indicator CSV"
+    assert captured[1][2] == "Score LGA input"
 
     prepare_cmd = captured[0][0]
     build_cmd = captured[1][0]
 
-    assert "src/prepare_lga_input.py" in prepare_cmd
-    assert "src/build_first_artifact.py" in build_cmd
+    assert "src/normalize_public_lga_indicator_csv.py" in prepare_cmd
+    assert "--sources-manifest" in prepare_cmd
+    assert "src/score_lga_input.py" in build_cmd
     assert "--config" in build_cmd
