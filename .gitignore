@@ -61,9 +61,15 @@ data-artifacts/latest/*
 # -------------------
 # docs 
 # ---------------
-docs/references/eae-method-summary.md 
-docs/references/energy-access-explorer-data-and-methods.pdf
+docs/references/
+
 docs/HANDOVER.md
+docs/planning/draft.txt
+
+gitrefdoc.md
+
+
+
 
 # Generated pipeline intermediates
 data-pipeline/data/lga_input_prepared.csv
@@ -75,7 +81,11 @@ data-pipeline/data/raw/_cache/
 data-pipeline/data/raw/*.gpkg
 data-pipeline/data/raw/*.tif
 data-pipeline/data/raw/*.tiff
+data-pipeline/data/raw/*.pbf
+
+data-pipeline/data/raw/
 data-pipeline/data/raw/grid3_worldpop_lga_extract.csv
+
 
 # Temp files
 data-pipeline/data/tmp_*.csv
