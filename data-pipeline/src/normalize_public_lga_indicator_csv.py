@@ -1,8 +1,9 @@
 """Normalize an already-tabular LGA indicator CSV into the NEAX canonical schema.
 
 This script does not read raw geospatial public sources directly.
-It expects a CSV that already contains LGA-level values such as:
-`lga_id`, `lga_name`, `population_density`, and `health_facilities`.
+It expects a CSV that already contains the LGA-level data we need,
+such as `lga_id`, `lga_name`, `population_density`, `health_facilities`, grid
+distance in km.
 """
 import argparse
 import hashlib
